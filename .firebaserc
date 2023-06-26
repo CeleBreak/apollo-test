@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "celebreak-test",
+    "production": "celebreak-89745"
+  }
+}

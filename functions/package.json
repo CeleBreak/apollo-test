@@ -1,0 +1,30 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "firebase deploy --only functions:coretest",
+    "emulate": "(npm run build && firebase emulators:start --inspect-functions)",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.5",
+    "@graphql-tools/schema": "^10.0.0",
+    "firebase-admin": "^11.9.0",
+    "firebase-functions": "^4.4.1",
+    "graphql": "^16.7.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
